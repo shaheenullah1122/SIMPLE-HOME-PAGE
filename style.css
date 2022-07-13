@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(150deg, #fff 75%, #ececea 100%);
+}
+
+header .right-content {
+    padding-right: 3rem;
+}
+
+header .right-content h1 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: calibri light;
+    color: #8b3030;
+}
+
+header .right-content p {
+    text-transform: capitalize;
+    font-family: calibri light;
+}
+
+/* ============= Navigatio =========== */
+nav {
+    background-color: #8b3030;
+    width: 100%;
+    float: right;
+}
+
+nav .menu {
+    width: 100%;
+}
+nav .menu ul {
+    float: right;
+    padding-right: 1.8rem;
+}
+
+nav .menu i {
+    display: none;
+}
+
+nav .menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1rem;
+    transition: 0.3s linear;
+}
+
+nav .menu ul li:hover {
+    background-color: #858585;
+    color: #fff;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .menu .active {
+    background-color: #858585;
+}
+
+/* ============= section-1 ============== */
+.section-1 {
+    width: 100%;
+    padding: 3rem 1rem;
+    margin-top: 2rem;
+}
+
+.section-1 .main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section-1 .right-content,
+.section-1 .left-content {
+    width: 50%;
+    height: 400px;
+}
+
+/* lef-side */
+
+.section-1 .right-content {
+    background-image: linear-gradient(
+            rgba(115, 115, 115, 0.4),
+            rgba(37, 33, 33, 0.3)
+        ),
+        url('images/form_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-1 .right-content .form-content {
+    padding: 0rem 2rem;
+}
+
+.section-1 .right-content .form-content p {
+    line-height: 1.6rem;
+    font-family: calibri light;
+    font-size: 1.2rem;
+    color: rgb(43, 43, 43);
+    font-weight: 800;
+}
+
+.section-1 .right-content .top-small {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.section-1 .right-content .top-small h1 {
+    font-size: 2.3rem;
+    background-color: #8b3030;
+    display: block;
+
+    color: #fff;
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.section-1 .right-content .top-small h4 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    width: 50%;
+}
+
+.section-1 .right-content .top-small span {
+    font-size: 2.5rem;
+    color: rgb(57, 11, 100);
+}
+
+.section-1 .right-content form {
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.section-1 .right-content img {
+    position: absolute;
+    top: 60%;
+    right: 4%;
+    width: 120px;
+    transform: rotate(13deg);
+}
+
+.section-1 .right-content form input {
+    width: 50%;
+    height: 1.5rem;
+    margin: 0.3rem 0rem;
+}
+
+.section-1 .right-content form input:focus,
+.section-1 .right-content form textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.section-1 .right-content form input,
+.section-1 .right-content form textarea {
+    outline: none;
+    border: none;
+    padding: 0rem 0.2rem;
+}
+
+.section-1 .right-content form label {
+    width: 10%;
+}
+
+.section-1 .right-content form textarea {
+    width: 80%;
+    margin-top: 0.8rem;
+}
+
+.section-1 .right-content .bottom-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+}
+
+.section-1 .right-content .bottom-small h1 {
+    font-size: 0.8rem;
+    color: rgb(234, 234, 234);
+    font-family: calibri light;
+}
+
+.section-1 .right-content .bottom-small button {
+    width: 50%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    text-transform: capitalize;
+    border: none;
+    background-color: #8b3030;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* ====== SECTION-2 ========== */
+.section-2 {
+    padding: 0.8rem 1rem;
+}
+.section-2 .main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-2 .main-div .box {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.section-2 .main-div .box-2 {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 0rem 1rem;
+}
+
+.section-2 .main-div .box h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.section-2 .main-div .box-1 span {
+    font-size: 1.8rem;
+    color: #8b3030;
+}
+
+.section-2 .main-div .box h2 {
+    font-size: 1.2rem;
+    color: #8b3030;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.section-2 .main-div .box-1 .ctnt-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2 .main-div .box-1 p {
+    color: rgb(106, 104, 104);
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.section-2 .main-div .box .right-side button {
+    position: absolute;
+    top: 75%;
+    right: 25%;
+    width: 8rem;
+    height: 2rem;
+    background-color: #8b3030;
+    color: #fff;
+    border: none;
+}
+
+.section-2 .main-div .box .right-side button::after {
+    content: '';
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    background-color: rgb(119, 116, 117);
+    height: 1px;
+}
+
+.section-2 .main-div .box-2 .top-div,
+.section-2 .main-div .box-2 .bottom-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2 .main-div .box-2 .top-div {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+}
+
+.section-2 .main-div .box-2 h1 {
+    font-size: 1.5rem;
+}
+
+.section-2 .main-div .box-2 span {
+    color: #8b3030;
+}
+
+.section-2 .main-div .box-2 button {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    background-color: #8b3030;
+    color: #fff;
+    border: none;
+}
+.section-2 .main-div .box-2 button::after {
+    content: '';
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    background-color: rgb(119, 116, 117);
+    height: 1px;
+}
+
+.section-2 .main-div .box-2 p {
+    color: rgb(106, 104, 104);
+    line-height: 1.2rem;
+}
+
+.section-2 .main-div .box-3 .top-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-2 .main-div .box-3 img {
+    width: 100px;
+}
+
+.section-2 .main-div .box-3 h1 {
+    margin-top: 2rem;
+}
+
+.section-2 .main-div .box-3 h1 span {
+    color: #8b3030;
+}
+
+.section-2 .main-div .box-3 p {
+    line-height: 1.5rem;
+    color: gray;
+}
+
+.section-2 .main-div .box-3 button {
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    background-color: #8b3030;
+    color: #fff;
+    border: none;
+}
+
+.section-2 .main-div .box-3 button::after {
+    content: '';
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    background-color: rgb(119, 116, 117);
+    height: 1px;
+}
+
+/* ======= section-3 ========= */
+.section-3 {
+    padding: 0.5rem 1rem;
+}
+
+.section-3 .main-div h1 {
+    padding-bottom: 0rem;
+}
+
+.section-3 .main-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.section-3 .main-div .box1 .child-div {
+    width: 14rem;
+    height: 4rem;
+    position: relative;
+    background-color: gray;
+    color: #fff;
+    margin-top: 1.5rem;
+    border-left: 10px solid #8b3030;
+    padding: 0.2rem 0.8rem;
+}
+
+.section-3 .main-div .box1 .child-div h2 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.section-3 .main-div .box1 .child-div button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    right: 10%;
+    margin-top: 0.6rem;
+}
+
+.section-3 .main-div .box1 .child-div button i {
+    color: #8b3030;
+    font-size: 0.9rem;
+}
+
+.section-3 .main-div .box2 h1 {
+    padding-bottom: 1.8rem;
+}
+
+.section-3 .main-div .box2 {
+    width: 60%;
+}
+
+.section-3 .main-div .box3 h3 {
+    text-transform: uppercase;
+}
+.section-3 .main-div .box3 h4 {
+    text-transform: uppercase;
+    color: #8b3030;
+    padding-bottom: 0.5rem;
+}
+
+.section-3 .main-div .box3 button {
+    width: 6rem;
+    height: 2rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    border: none;
+    background-color: #8b3030;
+    color: #fff;
+}
+
+.section-3 .main-div .box3 #top {
+    margin-top: 0rem;
+}
+.section-3 .main-div .box3 .box3-child {
+    margin-top: 2rem;
+}
+.section-3 .main-div .box3 button::after {
+    content: '';
+    width: 8rem;
+    height: 1px;
+    background-color: gray;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2%;
+    position: absolute;
+}
+
+.section-3 .main-div .box2 p {
+    line-height: 1.9rem;
+    color: gray;
+}
+
+.section-3 .main-div .box3 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0rem 0.3rem;
+}
+
+.section-3 .main-div .box3 h1 {
+    text-transform: uppercase;
+}
+
+.section-3 .main-div .box h1 span {
+    color: #8b3030;
+}

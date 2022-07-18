@@ -279,3 +279,27 @@
         display: none;
     }
 }
+
+/* ======== SECTION-2 ====== */
+
+@media (max-width: 962px) {
+    .section-2 .main-div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-3 .main-div {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-3 .main-div .box2 {
+        width: 100%;
+        text-align: center;
+    }
+}
